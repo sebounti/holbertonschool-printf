@@ -1,0 +1,41 @@
+.TH holbertonschool printf
+
+.SH NAME
+.BR _printf
+
+.SH SYNOPSIS
+.B #include "main.h"
+
+.SH DESCRIPTION
+The
+.BR "printf()"
+ is an output function from the standard library of the C programming language and other programming languages. This function allows you to display information on the screen or write it to a file.
+
+The basic syntax of the printf function is as follows:
+
+printf(format, arg1, arg2, ...);
+
+"format" is a string that specifies the formatting of the output, while "arg1", "arg2", ... are optional arguments that are inserted into the formatting string.
+.SH EXAMPLES
+Here is a simple example that uses the printf function to display a string
+
+#include <stdio.h>
+
+int main() {
+   char c = 'A';
+   printf("The character is: %c\n", c);
+   return 0;
+}
+
+
+.SH CONVERSION
+
+        %c \- is to print a charecter
+
+        %s \- is to print a string
+ 	
+	%d \- is to print a decimal
+
+        %i \- is to print a integer
+
+
