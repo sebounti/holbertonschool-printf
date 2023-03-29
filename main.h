@@ -1,27 +1,26 @@
-#define HEADER_FILE
-#ifndef HEADER_FILE
-
-
-/* ======= LIBRARIES ======= */
+#ifndef MAIN_H
+#define MAIN_H
 
 #include <stdarg.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <string.h>
+#include <stdio.h>
 
-/* ======= STRUCTURES ====== */
+/* STRUCTURES */
 
 /**
  * struct ptr - parameters and functions struct
  * @c: parameter indicator
  * @f: parameter function
  */
-typedef struct ptr
-{
-	char *c;
-	int (*f)(char *, int, va_list);
-} ptr_ch;
 
-/* === FUNCTIONS PROTOTYPES === */
+/* FUNCTIONS PROTOTYPES */
 
-/* _printf and parameter checker Functions*/
+/* _printf and parameter checker Functions */
 int _printf(const char *format, ...);
+
+
+/* Strings Functions */
+int _strlen(char* str);
+#endif
