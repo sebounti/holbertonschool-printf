@@ -25,12 +25,12 @@ Create the files for the manuel printf
 ***Flags (in any order), which modify the specification:
 These flags can be used in any order and can modify the format specifier in various ways. Some common flags include:
 
-***1. "-" : left-align the output within the specified width.
-***2. "+" : always prefix the output with a sign (+ or -).
-***3. " " : prefix the output with a space character if it is positive.
-***4. "0" : pad the output with leading zeros instead of spaces.
-***5. "#" : add an alternate form of output for certain format specifiers (e.g. add "0x" prefix for hexadecimal output).
-***6. "*" : the width or precision of the output is specified by an integer argument passed as an additional argument to the function.
+1. "-" : left-align the output within the specified width.
+2. "+" : always prefix the output with a sign (+ or -).
+3. " " : prefix the output with a space character if it is positive.
+4. "0" : pad the output with leading zeros instead of spaces.
+5. "#" : add an alternate form of output for certain format specifiers (e.g. add "0x" prefix for hexadecimal output).
+6. "*" : the width or precision of the output is specified by an integer argument passed as an additional argument to the function.
 
 ## FLOWCHART
 
