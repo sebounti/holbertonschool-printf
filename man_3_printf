@@ -14,8 +14,12 @@ The
 The basic syntax of the printf function is as follows:
 
 printf(format, arg1, arg2, ...);
-
+The printf function also allows you to print values in hexadecimal, octal and binary, 
+specify the field width, precision, etc. 
+These features are not needed in the given exercise, 
+but they are available in the full printf function.
 "format" is a string that specifies the formatting of the output, while "arg1", "arg2", ... are optional arguments that are inserted into the formatting string.
+
 .SH EXAMPLES
 Here is a simple example that uses the printf function to display a string
 
@@ -30,7 +34,7 @@ int main() {
 
 .SH CONVERSION
 
-        %c \- is to print a charecter
+        %c \- is to print a character
 
         %s \- is to print a string
  	
@@ -39,3 +43,7 @@ int main() {
         %i \- is to print a integer
 
 
+The printf function also allows you to print values in hexadecimal, octal and binary, 
+specify the field width, precision, etc. 
+These features are not needed in the given exercise, 
+but they are available in the full printf function.
