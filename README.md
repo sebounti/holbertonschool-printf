@@ -23,11 +23,11 @@ Create the files for the manuel printf
 Between % is the format specifier you can place, in order :
 
 Flags (in any order), which modify the specification:
-> - frames the converted argument to the left;
-> + systematically prints the sign of the number;
-> space if the first character is not a sign, places a space at the beginning.
-> 0 for numerical conversions, completes the beginning of the field with 0s,
-> # specifies a different output format:
+> "-" frames the converted argument to the left;
+> "+" systematically prints the sign of the number;
+> "space" if the first character is not a sign, places a space at the beginning.
+> "0" for numerical conversions, completes the beginning of the field with 0s,
+> "#" specifies a different output format:
 > for o, the first digit will be 0,
 > for x or X, 0x or 0X will be added if the result is not null,
 > for e,E,f,g,and G, the output will always contain a decimal point,
