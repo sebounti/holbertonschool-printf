@@ -23,6 +23,7 @@ Create the files for the manuel printf
 Between % is the format specifier you can place, in order :
 
 Flags (in any order), which modify the specification:
+'''
 > "-" frames the converted argument to the left;
 > "+" systematically prints the sign of the number;
 > "space" if the first character is not a sign, places a space at the beginning.
@@ -32,7 +33,7 @@ Flags (in any order), which modify the specification:
 > for x or X, 0x or 0X will be added if the result is not null,
 > for e,E,f,g,and G, the output will always contain a decimal point,
 > for g and G, the terminating 0's will be kept.
-  
+  '''
 A number which specifies the minimum width of the print field (completed if necessary by spaces or 0 if requested by the corresponding flag).
 
 ## FLOWCHART
