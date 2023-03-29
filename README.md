@@ -20,10 +20,10 @@ Create the files for the manuel printf
 
 
 ## SPECIFICATEURS
-***Between % is the format specifier you can place, in order :
+***Between % is the format specifier you can place, in order :***
 
-***Flags (in any order), which modify the specification:
-These flags can be used in any order and can modify the format specifier in various ways. Some common flags include:
+***Flags (in any order), which modify the specification:***
+***These flags can be used in any order and can modify the format specifier in various ways. Some common flags include:***
 
 1. "-" : left-align the output within the specified width.
 2. "+" : always prefix the output with a sign (+ or -).
