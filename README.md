@@ -7,6 +7,10 @@
 
 **The "printf" project consists of creating a function named "ft_printf" that takes as input a formatted string (like the one used with printf()) and produces the same output as printf(). The "ft_printf" function must be able to handle type conversions, such as integers, floats and strings, as well as formatting options, such as width and precision specifiers.**
 
+
+## MAKEFILE
+
+
 ## MAN PAGE PRINTF
 Create the files for the manuel printf
 > man_3_printf
