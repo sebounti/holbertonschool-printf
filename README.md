@@ -23,18 +23,14 @@ Create the files for the manuel printf
 Between % is the format specifier you can place, in order :
 
 Flags (in any order), which modify the specification:
-'''
-> "-" frames the converted argument to the left;
-> "+" systematically prints the sign of the number;
-> "space" if the first character is not a sign, places a space at the beginning.
-> "0" for numerical conversions, completes the beginning of the field with 0s,
-> "#" specifies a different output format:
-> for o, the first digit will be 0,
-> for x or X, 0x or 0X will be added if the result is not null,
-> for e,E,f,g,and G, the output will always contain a decimal point,
-> for g and G, the terminating 0's will be kept.
-  '''
-A number which specifies the minimum width of the print field (completed if necessary by spaces or 0 if requested by the corresponding flag).
+These flags can be used in any order and can modify the format specifier in various ways. Some common flags include:
+
+1. "-" : left-align the output within the specified width.
+2. "+" : always prefix the output with a sign (+ or -).
+3. " " : prefix the output with a space character if it is positive.
+4. "0" : pad the output with leading zeros instead of spaces.
+5. "#" : add an alternate form of output for certain format specifiers (e.g. add "0x" prefix for hexadecimal output).
+6. "*" : the width or precision of the output is specified by an integer argument passed as an additional argument to the function.
 
 ## FLOWCHART
 
