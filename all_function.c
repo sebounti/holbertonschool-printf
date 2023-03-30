@@ -45,18 +45,6 @@ int printchar(va_list args)
 	return (1);
 }
 /**
- * printpercent - print percent
- * @args: argument type va_list
- *
- * Return: i int
- */
-int printpercent(va_list args)
-{
-	(void)args;
-	_putchar('%');
-	return (1);
-}
-/**
  * printint - print a int
  * @args: the char a print
  *
@@ -88,4 +76,16 @@ int printint(va_list args)
 		++count;
 	}
 	return (count);
+}
+/**
+ * printpercent - print percent
+ * @args: argument type va_list
+ *
+ * Return: i int
+ */
+int printpercent(va_list args)
+{
+	(void)args;
+	_putchar('%');
+	return (1);
 }

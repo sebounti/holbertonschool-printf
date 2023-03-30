@@ -13,7 +13,8 @@ int function(const char s, va_list args)
 		{'c', printchar},
 		{'s', printstr},
 		{'d', printint},
-		{'i', printint}};
+		{'i', printint},
+        {'%', printpercent}};
     
 	while (get_f[i].type != 0)
 	{
