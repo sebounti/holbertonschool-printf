@@ -7,20 +7,26 @@
 #include <string.h>
 #include <stdio.h>
 
-/* STRUCTURES */
-
-/**
- * struct ptr - parameters and functions struct
- * @c: parameter indicator
- * @f: parameter function
- */
+/* _printf and parameter checker Functions */
+int _putchar(char c);
+int _printf(const char *format, ...);
+int function(const char c, va_list li);
 
 /* FUNCTIONS PROTOTYPES */
+int _putchar(char);
+int printchar(va_list args);
+int printstr(va_list args);
+int printint(va_list args);
 
-/* _printf and parameter checker Functions */
-int _printf(const char *format, ...);
-
+/* STRUCTURE*/
+typedef struct get_f
+{
+	char type;
+	int (*f)(va_list ptr);
+} get;
 
 /* Strings Functions */
 int _strlen(char* str);
+
+
 #endif

@@ -11,50 +11,40 @@
  **/
 int _printf(const char *format, ...)
 {
-    int i;
-    char *str = "";
-    char str_len;
-    va_list arg_list;
-    int char_count = 0;
+    int i = 0, fun = 0, char_count = 0;
+    va_list args;
 
  if (format == NULL || (format[0] == '%' && format[1] == '\0'))
         return (-1);
 
-    va_start(arg_list, format);
+    va_start(args, format);
         if (format == 0)
             return (0);
 
-        while ((*format) != '\0')
+        while (format[i])
         {
-            if (*format != '%')
+            if (format[i] != '%')
                 {
-                putchar(*format);
+                putchar(*(format + i));
                 char_count++;
                 }
-            else
-            {
-                format++;
-                if (*format == 'c')
-                    {
-                    putchar(va_arg(arg_list, int));
-                    char_count++;
-                    }
-                else if (*format == '%')
-                    {
-                    putchar('%');
-                    char_count++;
-                    }
-                else if (*format == 's')
-                str = va_arg(arg_list, char*);
-                str_len = strlen(str);
-                for (i = 0; i < str_len; i++)
-                    {
-                    putchar(str[i]);
-                    char_count++;
-                    }
-            }
-        format++;
+            if(format[i] == '%')
+		    {
+			fun = function(format[i + 1], args);
+			if (fun != 0)
+			    {
+				char_count = char_count + fun;
+				i = i + 2;
+				continue;
+                }
+			if (format[i] == '\0')
+			    {
+				_putchar(format[i]);
+				char_count++;
+			    }
+		    }
+			i++;
         }
-    va_end(arg_list);
+    va_end(args);
     return (char_count);
 }
