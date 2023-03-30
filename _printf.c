@@ -4,9 +4,7 @@
  * _printf - print function
  *@i - browse the character string
  *@char_count - pointer that counts the number of characters
- *@str - store the character string
- *@str_len - store the length of the character string stored in the variable.
- *@format : pointer to the format string passed as an argument to the function
+] *@format : pointer to the format string passed as an argument to the function
  *Return: char_count
  **/
 int _printf(const char *format, ...)
