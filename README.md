@@ -39,4 +39,6 @@ Create the files for the manuel printf
 ## FLOWCHART
 
 
+## COMPILATION 
+> gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c
 
