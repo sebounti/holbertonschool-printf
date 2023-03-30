@@ -42,3 +42,13 @@ Create the files for the manuel printf
 ## COMPILATION 
 > gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c
 
+## CONVERSION SPECIFIER ▲
+
+### A character indicates the type of conversion to perform. The conversion specifiers and their meanings are:
+
+### d, i
+The int argument is converted to a signed decimal number. If precision is specified, it represents the minimum number of digits that should appear. If the conversion provides fewer digits, the result is left-padded with zeros. By default, precision is 1. When 0 is converted with a precision of 0, the output is empty.
+### o, u, x, X
+The unsigned int argument is converted to an unsigned octal number (o), an unsigned decimal number (u), or an unsigned hexadecimal number (x and X). The letters abcdef are used for conversions with x, while ABCDEF are used for conversions with X. If precision is indicated, it represents the minimum number of digits to appear. If the converted value requires fewer digits, it is left-padded with zeros. By default, precision is 1. When 0 is converted with a precision of 0, the output is empty.
+
+
