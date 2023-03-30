@@ -17,6 +17,7 @@ int _putchar(char);
 int printchar(va_list args);
 int printstr(va_list args);
 int printint(va_list args);
+int printpercent(va_list args);
 
 /* STRUCTURE*/
 typedef struct get_f
