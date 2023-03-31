@@ -3,7 +3,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 /**
- * printstring - print a string
+ * printstr - print a string
  * @args: the String to print
  *
  * Return: i int
@@ -11,23 +11,18 @@
 int printstr(va_list args)
 {
 	char *str;
-	int i = 0;
+	int i;
 
 	str = va_arg(args, char *);
+
 	if (str == NULL)
 	{
 		str = "(null)";
 	}
-	if (str[i] == '\0')
-	{
-		i++;
-		return (1);
 
-	}
-	while (str[i])
+	for (i = 0; str[i] != '\0'; i++)
 	{
 		_putchar(str[i]);
-		i++;
 	}
 	return (i);
 }
@@ -39,8 +34,14 @@ int printstr(va_list args)
  */
 int printchar(va_list args)
 {
+    char str;
 
-	_putchar(va_arg(args, int));
+	str = (va_arg(args, int));
+    if (str == 0)
+	{
+		str = '\0';
+    }
+    _putchar(str);
 
 	return (1);
 }
