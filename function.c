@@ -1,35 +1,33 @@
 #include "main.h"
-#include <stdarg.h>
+
 /**
- * get_function - fun
- * @s: char to define fun
- * @args: va_list
- * Return: int
+ *get_op_func - pointer to adress where the instructions of a function
+ *start (it takes a char from format, in this case our format[i + 1]),
+ *and returns wether if it found a function (that takes the other parameter,
+ *the list of variadic arguments), or NULL in cas if it didn't match.
+ *@format: i + 1, which is the format specifier to check
+ *Return: the counter from the functions passed when it matches
  */
-int function(const char s, va_list args)
+int (*get_op_func(char format))(va_list args)
 {
-	int i = 0, count = 0;
-	get get_f[]= {
-		{'c', printchar},
-		{'s', printstr},
-		{'d', printint},
-		{'i', printint},
-        {'%', printpercent}};
-    
-	while (get_f[i].type != 0)
+	fmt_t opp[] = {
+		{'c', print_c},
+		{'s', print_s},
+		{'d', print_d},
+		{'i', print_d},
+		{'%', print_m},
+		{'\0', NULL}
+	};
+	int i;
+
+	i = 0;
+	while (opp[i].type != '\0')
 	{
-		if (get_f[i].type == s)
+		if (opp[i].type == format) /* mandamos format[i+1] */
 		{
-			count = count + get_f[i].f(args);
-			return (count);
+			return (opp[i].print_type);
 		}
 		i++;
 	}
-	if (get_f[0].type!= s)
-	{
-		_putchar('%');
-		_putchar(s);
-		return (2);
-	}
-	return (0);
+	return (NULL);
 }

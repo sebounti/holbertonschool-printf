@@ -6,25 +6,25 @@
 #include <unistd.h>
 #include <string.h>
 #include <stdio.h>
+#include <limits.h>
 
 /* _printf and parameter checker Functions */
 int _putchar(char c);
 int _printf(const char *format, ...);
-int function(const char c, va_list li);
+int (*get_op_func(char format))(va_list args);
 
 /* FUNCTIONS PROTOTYPES */
-int _putchar(char);
-int printchar(va_list args);
-int printstr(va_list args);
-int printint(va_list args);
-int printpercent(va_list args);
+int print_c(va_list args);
+int print_s(va_list args);
+int print_d(va_list args);
+int print_m(va_list args);
 
 /* STRUCTURE*/
-typedef struct get_f
+typedef struct format_t
 {
 	char type;
-	int (*f)(va_list ptr);
-} get;
+	int (*print_type)(va_list args);
+} fmt_t;
 
 /* Strings Functions */
 int _strlen(char* str);
