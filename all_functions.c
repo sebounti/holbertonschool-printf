@@ -13,8 +13,6 @@ int _strlen(char *s)
 		c++;
 	return (c);
 }
-
-
 /**
  *print_c - print a character
  *@args: variadic list of argument passed
@@ -49,7 +47,6 @@ int print_s(va_list args)
 	}
 	return (i);
 }
-
 /**
  *print_d - Prints an integer.
  *@args: variadic list of argument passed
