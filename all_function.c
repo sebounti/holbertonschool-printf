@@ -5,7 +5,6 @@
 /**
  * printstr - print a string
  * @args: the String to print
- *
  * Return: i int
  */
 int printstr(va_list args)
@@ -53,28 +52,18 @@ int printchar(va_list args)
  */
 int printint(va_list args)
 {
-	int count = 0, rest = 1, n;
-	unsigned int x;
+	int num = 0;
+	int count = 0; 
 
-	n = va_arg(args, int);
-	x = n;
-
-	if (n < 0)
+	if (args)
 	{
-		_putchar('-');
-		x = -x;
-		++count;
-	}
-	while ((x / rest) > 9)
-	{
-		rest = rest * 10;
-	}
-	while (rest > 0)
-	{
-		_putchar(x / rest + '0');
-		x = (x % rest);
-		rest = rest / 10;
-		++count;
+		num = va_arg(args, int);
+		if (num == 0)
+		{
+			_putchar('0');
+			return (1);
+		}
+		count = printint(args);
 	}
 	return (count);
 }
