@@ -5,7 +5,7 @@
 
 **The printf() function is commonly used to display formatted strings in standard output, such as the console or a file. The goal of this project is to understand how the printf() function works by creating a custom version of this function that provides the same functionality and formatting options.**
 
-**The "printf" project consists of creating a function named "_printf.c" that takes as input a formatted string (like the one used with printf()) and produces the same output as printf(). The "ft_printf" function must be able to handle type conversions, such as integers, floats and strings, as well as formatting options, such as width and precision specifiers.**
+**The "printf" project consists of creating a function named "_printf.c" that takes as input a formatted string (like the one used with printf()) and produces the same output as printf(). The "_printf.c" function must be able to handle type conversions, such as integers, floats and strings, as well as formatting options, such as width and precision specifiers.**
 
 
 ## MAKEFILE
