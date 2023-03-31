@@ -8,7 +8,7 @@
 **The "printf" project consists of creating a function named "_printf.c" that takes as input a formatted string (like the one used with printf()) and produces the same output as printf(). The "_printf.c" function must be able to handle type conversions, such as integers, floats and strings, as well as formatting options, such as width and precision specifiers.**
 
 
-## MAKEFILE
+
 
 
 ## MAN PAGE PRINTF
