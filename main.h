@@ -27,7 +27,7 @@ typedef struct format_t
 } fmt_t;
 
 /* Strings Functions */
-int _strlen(char* str);
+int _strlen(char *str);
 
 
 #endif
