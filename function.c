@@ -13,7 +13,7 @@ int (*get_op_func(char format))(va_list args)
 	fmt_t opp[] = {
 		{'c', print_c},
 		{'s', print_s},
-		{'d', print_d}, /* fonction qui selectionne la bonne paire caractere pointeur */
+		{'d', print_d}, /*fonction selectionne la bonne paire caractere pointeur*/
 		{'i', print_d},
 		{'%', print_m},
 		{'b', print_b},
@@ -24,7 +24,7 @@ int (*get_op_func(char format))(va_list args)
 	i = 0;
 	while (opp[i].type != '\0')
 	{
-		if (opp[i].type == format) /*  parcours le tableau et renvoie vers la fonction specifier */
+		if (opp[i].type == format)/*parcours tableau renvoie vers fonction spe*/
 		{
 			return (opp[i].print_type);
 		}
