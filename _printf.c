@@ -46,7 +46,6 @@ if (format != NULL) /* Vérifie que format n'est pas NULL*/
 		if (format[i] == '\0')/*Tous les caractères de format ont été traités*/
 			return (count);/* Retourne le nombre de caractères affichés */
 	}
-	else
 		return (-1);
 	va_end(args);
 	return (0);

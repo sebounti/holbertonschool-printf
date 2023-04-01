@@ -16,7 +16,6 @@ int (*get_op_func(char format))(va_list args)
 		{'d', print_d}, /*fonction selectionne la bonne paire caractere pointeur*/
 		{'i', print_d},
 		{'%', print_m},
-		{'b', print_b},
 		{'\0', NULL}
 	};
 	int i;
